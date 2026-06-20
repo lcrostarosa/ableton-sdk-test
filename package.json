@@ -1,0 +1,16 @@
+{
+  "name": "sound-intent-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portable sound-intent engine (profiles/recipes/proposers/adapters) shared by the in-Live extension and the MCP kernel, plus its tests (TypeScript, run natively by Node).",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node test/fixtureBoundary.test.ts && node test/presetCorpus.test.ts && node test/presetCorpusStore.test.ts && node test/acquisitionGates.test.ts && node test/filePresetSource.test.ts && node test/livePresetSource.test.ts && node test/wav.test.ts && node test/measure.test.ts && node test/audioFeatures.test.ts && node test/presetLabels.test.ts && node test/presetSimilarity.test.ts && node test/smallCorpusProof.test.ts && node test/intent.test.ts && node test/liveAdapter.test.ts"
+  },
+  "devDependencies": {
+    "@ableton-extensions/sdk": "file:../../ableton-extensions-sdk-1.0.0-beta.0.tgz",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  }
+}

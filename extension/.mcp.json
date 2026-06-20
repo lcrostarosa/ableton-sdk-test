@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ableton-sdk-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/lucascrostarosa/Downloads/extensions-sdk-1.0.0-beta.0/ideas/demo 2/extension/ableton-sdk-mcp/abletonsdk-mcp-server/src/index.ts"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,9 @@
+capture=metadata_only
+metadata=filename_folder_metadata
+parameterSimilarity=no
+audioSimilarity=no
+featureSources=filename-folder-metadata
+note=Direct .SerumPreset parsing is unavailable, so indexing falls back to filename/folder metadata only.
+note=Audio render is unavailable for this path (FAIL: No routed audio render lane is available in the minimal fixture.), so audio features are marked missing.
+note=Parameter snapshot is unavailable for this path (FAIL: No live device snapshot is available in the minimal fixture.), so parameter similarity is disabled.
+note=No automatic or manual capture path is available, so indexing degrades to metadata-only.

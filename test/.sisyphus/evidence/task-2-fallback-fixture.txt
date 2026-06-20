@@ -1,0 +1,7 @@
+capture=manual_current_preset
+metadata=filename_folder_metadata
+parameterSimilarity=yes
+audioSimilarity=yes
+featureSources=filename-folder-metadata,ableton-parameter-snapshot,ableton-audio-render
+note=Automatic preset enumeration/loading is unavailable, so manual/current-preset capture is selected.
+note=Direct .SerumPreset parsing is unavailable, so indexing falls back to filename/folder metadata only.

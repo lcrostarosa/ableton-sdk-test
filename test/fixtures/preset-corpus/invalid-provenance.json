@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "preset-corpus/v1",
+  "records": [
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "fixture.invalid-provenance",
+      "file": {
+        "relativePath": "synthetic/Invalid Provenance.fxp",
+        "fileName": "Invalid Provenance.fxp"
+      },
+      "source": {
+        "kind": "fixture"
+      },
+      "provenance": [
+        {
+          "kind": "guessed_by_vibes"
+        }
+      ]
+    }
+  ]
+}

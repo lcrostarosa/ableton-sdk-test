@@ -1,0 +1,14 @@
+.serum-corpus/
+*.DS_Store
+.sisyphus/*
+node_modules/**
+extension/.omc
+extension/.logs
+.omc/**
+extension/ableton-sdk-mcp/abletonsdk-mcp-server/node_modules/
+extension/.omc/
+extension/ableton-sdk-mcp/.omc/state/
+extension/.sisyphus/
+extension/ableton-sdk-mcp/kernel/node_modules/
+extension/ableton-sdk-mcp/kernel/dist/
+extension/dist/

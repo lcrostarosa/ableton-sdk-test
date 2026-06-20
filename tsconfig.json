@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+  },
+  "include": [
+    "src/**/*",
+    "test/fixtures/**/*.ts",
+    "*.ts",
+    "test/wav.test.ts",
+    "test/measure.test.ts",
+    "test/intent.test.ts",
+    "test/audioFeatures.test.ts",
+    "test/presetSimilarity.test.ts",
+    "test/liveAdapter.test.ts",
+  ],
+}

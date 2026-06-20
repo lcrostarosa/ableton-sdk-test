@@ -1,0 +1,1037 @@
+{
+  "schemaVersion": "preset-corpus/v1",
+  "records": [
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-001",
+      "file": {
+        "relativePath": "synthetic/Bass/BS Anchor Sub.fxp",
+        "fileName": "BS Anchor Sub.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "ableton",
+        "synth": "serum",
+        "ableton": {
+          "trackName": "Bass Bus",
+          "deviceName": "Serum 2",
+          "presetName": "BS Anchor Sub",
+          "pluginName": "Serum"
+        },
+        "manual": {
+          "author": "fixture",
+          "notes": "Synthetic bass anchor fixture.",
+          "sourceName": "unit-test-fixture"
+        }
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "manual",
+          "detail": "Synthetic full-evidence bass query record."
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.22,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.1,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.05,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 320,
+        "highRatio": 0.12,
+        "bassRatio": 0.78,
+        "rms": 0.42,
+        "features": {
+          "spectralFlatness": 0.09
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic bass feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Bass",
+        "style": "Warm",
+        "bpm": 128,
+        "key": "F",
+        "tags": [
+          "synthetic",
+          "bass",
+          "sub"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-002",
+      "file": {
+        "relativePath": "synthetic/Bass/BS Round Support.fxp",
+        "fileName": "BS Round Support.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "ableton",
+        "synth": "serum",
+        "ableton": {
+          "trackName": "Bass Bus",
+          "deviceName": "Serum 2",
+          "presetName": "BS Round Support",
+          "pluginName": "Serum"
+        },
+        "manual": {
+          "author": "fixture",
+          "notes": "Synthetic bass support fixture.",
+          "sourceName": "unit-test-fixture"
+        }
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.27,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.16,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.08,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 360,
+        "highRatio": 0.16,
+        "bassRatio": 0.71,
+        "rms": 0.4,
+        "features": {
+          "spectralFlatness": 0.11
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic rounded bass feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Bass",
+        "style": "Warm",
+        "bpm": 128,
+        "key": "F",
+        "tags": [
+          "synthetic",
+          "bass",
+          "round"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-003",
+      "file": {
+        "relativePath": "synthetic/Bass/BS Reese Motion.fxp",
+        "fileName": "BS Reese Motion.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "filename",
+        "synth": "serum",
+        "manual": {
+          "author": "fixture",
+          "notes": "Synthetic moving bass fixture.",
+          "sourceName": "sanitized-fixture"
+        }
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "derived_from_filename",
+          "path": "file.fileName"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.31,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.28,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.09,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 430,
+        "highRatio": 0.22,
+        "bassRatio": 0.67,
+        "rms": 0.46,
+        "features": {
+          "spectralFlatness": 0.19
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic reese bass feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Bass",
+        "style": "Moving",
+        "bpm": 128,
+        "key": "F#",
+        "tags": [
+          "synthetic",
+          "bass",
+          "reese",
+          "moving"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-004",
+      "file": {
+        "relativePath": "synthetic/Bass/BS Ghost Sub.fxp",
+        "fileName": "BS Ghost Sub.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "manual",
+        "synth": "serum",
+        "manual": {
+          "author": "fixture",
+          "notes": "Missing audio on purpose for confidence penalty coverage.",
+          "sourceName": "sanitized-fixture"
+        }
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "manual",
+          "detail": "Missing audio on purpose for confidence penalty coverage."
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.19,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.07,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.04,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Bass",
+        "style": "Dark",
+        "bpm": 128,
+        "key": "E",
+        "tags": [
+          "synthetic",
+          "bass",
+          "sub",
+          "ghost"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-005",
+      "file": {
+        "relativePath": "synthetic/Pad/PD Velvet Drift.fxp",
+        "fileName": "PD Velvet Drift.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "filename",
+        "synth": "serum"
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "derived_from_filename",
+          "path": "file.fileName"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.58,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.42,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.81,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 1180,
+        "highRatio": 0.46,
+        "bassRatio": 0.31,
+        "rms": 0.27,
+        "features": {
+          "spectralFlatness": 0.18
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic warm pad feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Pad",
+        "style": "Warm",
+        "bpm": 128,
+        "key": "C",
+        "tags": [
+          "synthetic",
+          "pad",
+          "wide"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-006",
+      "file": {
+        "relativePath": "synthetic/Pad/PD Air Choir.fxp",
+        "fileName": "PD Air Choir.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "filename",
+        "synth": "serum"
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "derived_from_filename",
+          "path": "file.relativePath"
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 1520,
+        "highRatio": 0.61,
+        "bassRatio": 0.18,
+        "rms": 0.24,
+        "features": {
+          "spectralFlatness": 0.14
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic airy pad feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Pad",
+        "style": "Bright",
+        "bpm": 128,
+        "key": "D",
+        "tags": [
+          "synthetic",
+          "pad",
+          "air",
+          "choir"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-007",
+      "file": {
+        "relativePath": "synthetic/Lead/LD Neon Razor.fxp",
+        "fileName": "LD Neon Razor.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "filename",
+        "synth": "serum"
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "derived_from_filename",
+          "path": "file.fileName"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.76,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.21,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.02,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 2260,
+        "highRatio": 0.83,
+        "bassRatio": 0.14,
+        "rms": 0.39,
+        "features": {
+          "spectralFlatness": 0.24
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic bright lead feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Lead",
+        "style": "Bright",
+        "bpm": 128,
+        "key": "A",
+        "tags": [
+          "synthetic",
+          "lead",
+          "mono",
+          "bright"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-008",
+      "file": {
+        "relativePath": "synthetic/Lead/LD Solar Hook.fxp",
+        "fileName": "LD Solar Hook.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "ableton",
+        "synth": "serum",
+        "ableton": {
+          "trackName": "Lead Bus",
+          "deviceName": "Serum 2",
+          "presetName": "LD Solar Hook",
+          "pluginName": "Serum"
+        },
+        "manual": {
+          "author": "fixture",
+          "notes": "Synthetic hook lead fixture.",
+          "sourceName": "unit-test-fixture"
+        }
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.72,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.18,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.03,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 2120,
+        "highRatio": 0.78,
+        "bassRatio": 0.17,
+        "rms": 0.37,
+        "features": {
+          "spectralFlatness": 0.21
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic hook lead feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Lead",
+        "style": "Bright",
+        "bpm": 128,
+        "key": "A",
+        "tags": [
+          "synthetic",
+          "lead",
+          "hook",
+          "sparkle"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-009",
+      "file": {
+        "relativePath": "synthetic/Pluck/PL Kalimba Dust.fxp",
+        "fileName": "PL Kalimba Dust.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "filename",
+        "synth": "serum"
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "derived_from_filename",
+          "path": "file.fileName"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.63,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.12,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.01,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 1880,
+        "highRatio": 0.58,
+        "bassRatio": 0.22,
+        "rms": 0.29,
+        "features": {
+          "spectralFlatness": 0.27
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic pluck feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Pluck",
+        "style": "Soft",
+        "bpm": 128,
+        "key": "G",
+        "tags": [
+          "synthetic",
+          "pluck",
+          "kalimba",
+          "mallet"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-010",
+      "file": {
+        "relativePath": "synthetic/Arp/ARP Quartz Pulse.fxp",
+        "fileName": "ARP Quartz Pulse.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "filename",
+        "synth": "serum"
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "derived_from_filename",
+          "path": "file.relativePath"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.68,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.14,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.01,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "audioFeatures": {
+        "sampleRate": 44100,
+        "durationSeconds": 4,
+        "centroid": 1960,
+        "highRatio": 0.72,
+        "bassRatio": 0.19,
+        "rms": 0.31,
+        "features": {
+          "spectralFlatness": 0.22
+        },
+        "provenance": [
+          {
+            "kind": "derived_from_audio",
+            "detail": "Synthetic arpeggio feature vector."
+          }
+        ]
+      },
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Arp",
+        "style": "Bright",
+        "bpm": 128,
+        "key": "B",
+        "tags": [
+          "synthetic",
+          "arp",
+          "sequence",
+          "pulse"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-011",
+      "file": {
+        "relativePath": "synthetic/FX/FX Noise Riser.fxp",
+        "fileName": "FX Noise Riser.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "filename",
+        "synth": "serum"
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "derived_from_filename",
+          "path": "file.fileName"
+        }
+      ],
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "FX",
+        "style": "Aggressive",
+        "bpm": 128,
+        "key": "C",
+        "tags": [
+          "synthetic",
+          "fx",
+          "riser",
+          "noise"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "preset-corpus/v1",
+      "id": "preset-012",
+      "file": {
+        "relativePath": "synthetic/Keys/KY Soft Rhodes.fxp",
+        "fileName": "KY Soft Rhodes.fxp",
+        "extension": ".fxp"
+      },
+      "source": {
+        "kind": "manual",
+        "synth": "serum",
+        "manual": {
+          "author": "fixture",
+          "notes": "Synthetic soft keys fixture with no audio render.",
+          "sourceName": "sanitized-fixture"
+        }
+      },
+      "provenance": [
+        {
+          "kind": "fixture"
+        },
+        {
+          "kind": "manual",
+          "detail": "Fixture includes manual notes but no audio render."
+        }
+      ],
+      "parameters": [
+        {
+          "id": "filter.cutoff",
+          "name": "Filter Cutoff",
+          "normalizedValue": 0.49,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[0]"
+            }
+          ]
+        },
+        {
+          "id": "osc.detune",
+          "name": "Unison Detune",
+          "normalizedValue": 0.05,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[1]"
+            }
+          ]
+        },
+        {
+          "id": "env.attack",
+          "name": "Amp Attack",
+          "normalizedValue": 0.36,
+          "provenance": [
+            {
+              "kind": "derived_from_parameters",
+              "path": "parameters[2]"
+            }
+          ]
+        }
+      ],
+      "metadataTraits": {
+        "vendor": "Synthetic Fixtures",
+        "bank": "Task 9 Proof",
+        "category": "Keys",
+        "style": "Soft",
+        "bpm": 128,
+        "key": "Eb",
+        "tags": [
+          "synthetic",
+          "keys",
+          "rhodes",
+          "soft"
+        ],
+        "provenance": [
+          {
+            "kind": "manual"
+          }
+        ]
+      }
+    }
+  ]
+}

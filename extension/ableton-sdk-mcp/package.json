@@ -1,0 +1,12 @@
+{
+  "name": "ableton-sdk-mcp",
+  "version": "0.2.0",
+  "private": true,
+  "description": "MCP control plane for Ableton Live: stdio MCP server (Claude Code side) + WebSocket kernel extension (Live side) exposing the sound-intent engine.",
+  "scripts": {
+    "setup": "npm --prefix kernel install && npm --prefix abletonsdk-mcp-server install",
+    "build": "npm --prefix kernel run build",
+    "typecheck": "npm --prefix kernel run typecheck && npm --prefix abletonsdk-mcp-server run typecheck",
+    "test": "npm --prefix kernel test && npm --prefix abletonsdk-mcp-server test"
+  }
+}
