@@ -4,13 +4,24 @@
   "private": true,
   "type": "module",
   "description": "Portable sound-intent engine (profiles/recipes/proposers/adapters) shared by the in-Live extension and the MCP kernel, plus its tests (TypeScript, run natively by Node).",
+  "main": "dist/extension.js",
   "scripts": {
+    "build": "tsx build.ts",
+    "build:prod": "tsx build.ts --production",
     "typecheck": "tsc --noEmit",
-    "test": "node test/fixtureBoundary.test.ts && node test/presetCorpus.test.ts && node test/presetCorpusStore.test.ts && node test/acquisitionGates.test.ts && node test/filePresetSource.test.ts && node test/livePresetSource.test.ts && node test/wav.test.ts && node test/measure.test.ts && node test/audioFeatures.test.ts && node test/presetLabels.test.ts && node test/presetSimilarity.test.ts && node test/smallCorpusProof.test.ts && node test/intent.test.ts && node test/liveAdapter.test.ts"
+    "test": "node test/fixtureBoundary.test.ts && node test/presetCorpus.test.ts && node test/presetCorpusStore.test.ts && node test/acquisitionGates.test.ts && node test/filePresetSource.test.ts && node test/livePresetSource.test.ts && node test/wav.test.ts && node test/measure.test.ts && node test/audioFeatures.test.ts && node test/presetLabels.test.ts && node test/presetSimilarity.test.ts && node test/smallCorpusProof.test.ts && node test/intent.test.ts && node test/liveAdapter.test.ts && node test/soundIntents.test.ts",
+    "start": "bash scripts/dev.sh",
+    "logs": "bash scripts/tail-host-log.sh",
+    "package": "tsx build.ts --production && extensions-cli package"
+  },
+  "dependencies": {
+    "@ableton-extensions/sdk": "file:../../ableton-extensions-sdk-1.0.0-beta.0.tgz"
   },
   "devDependencies": {
-    "@ableton-extensions/sdk": "file:../../ableton-extensions-sdk-1.0.0-beta.0.tgz",
+    "@ableton-extensions/cli": "file:../../ableton-extensions-cli-1.0.0-beta.0.tgz",
     "@types/node": "^22.0.0",
+    "esbuild": "0.28.0",
+    "tsx": "^4.19.0",
     "typescript": "^5.9.3"
   }
 }

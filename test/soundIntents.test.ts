@@ -1,10 +1,10 @@
 // Structural checks on the in-Live sound-intent surface (no host needed): the menu
 // commands must reference real recipes and stay collision-free. The engine behavior
-// behind them is covered by ../../intent.test.ts and ../../liveAdapter.test.ts.
-//   npx tsx src/soundIntents.test.ts
+// behind them is covered by ./intent.test.ts and ./liveAdapter.test.ts.
+//   npx tsx test/soundIntents.test.ts
 import assert from "node:assert";
-import { INTENT_COMMANDS, REVERT_COMMAND_ID } from "./soundIntents.ts";
-import { RECIPES } from "../../src/recipes.ts";
+import { INTENT_COMMANDS, REVERT_COMMAND_ID } from "../src/soundIntents.ts";
+import { RECIPES } from "../src/recipes.ts";
 
 let pass = 0;
 function check(name: string, fn: () => unknown): void {

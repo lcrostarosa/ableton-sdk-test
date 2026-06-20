@@ -1,9 +1,9 @@
-import { readPresetCorpusFile } from "./src/presetCorpusStore.ts";
+import { readPresetCorpusFile } from "./presetCorpusStore.ts";
 import {
   buildPresetSimilarityReport,
   formatPresetSimilarityReportText,
   writePresetSimilarityReport,
-} from "./src/presetSimilarity.ts";
+} from "./presetSimilarity.ts";
 
 interface CliOptions {
   corpus: string;
@@ -50,7 +50,7 @@ function parseArgs(argv: readonly string[]): CliOptions {
 
 function printHelp(): void {
   process.stdout.write(
-    "Usage: node runPresetReport.ts --corpus <path> --query <preset-id> [--out <path>]\n",
+    "Usage: node src/runPresetReport.ts --corpus <path> --query <preset-id> [--out <path>]\n",
   );
 }
 

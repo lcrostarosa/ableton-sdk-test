@@ -1,10 +1,10 @@
 // Offline MCP server tests — a real MCP client talks to the real server over an in-memory
 // transport; only the kernel (the Live side) is stubbed. Zero Ableton required.
-//   node test-mcp.mjs
+//   node test/test-mcp.mjs
 import assert from "node:assert";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
-import { createServer } from "./src/index.ts";
+import { createServer } from "../src/index.ts";
 
 let pass = 0;
 async function check(name, fn) {

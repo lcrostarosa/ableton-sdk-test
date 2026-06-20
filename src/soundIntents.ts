@@ -5,12 +5,12 @@
 
 import fs from "node:fs";
 import { MidiTrack, type ApiVersion, type ExtensionContext, type Handle } from "@ableton-extensions/sdk";
-import { LiveAdapter } from "../../src/liveAdapter.ts";
-import { applyRecipe } from "../../src/intentEngine.ts";
-import type { ApplyRecipeOptions, RecipeResult } from "../../src/intentEngine.ts";
-import { makeRandomProposer } from "../../src/proposers.ts";
-import { RECIPES } from "../../src/recipes.ts";
-import { SERUM_PROFILE } from "../../src/profiles.ts";
+import { LiveAdapter } from "./liveAdapter.ts";
+import { applyRecipe } from "./intentEngine.ts";
+import type { ApplyRecipeOptions, RecipeResult } from "./intentEngine.ts";
+import { makeRandomProposer } from "./proposers.ts";
+import { RECIPES } from "./recipes.ts";
+import { SERUM_PROFILE } from "./profiles.ts";
 import { createLogger, describeError } from "./logging.ts";
 
 const logger = createLogger("soundIntents");

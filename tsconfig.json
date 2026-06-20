@@ -14,13 +14,7 @@
   },
   "include": [
     "src/**/*",
-    "test/fixtures/**/*.ts",
+    "test/**/*",
     "*.ts",
-    "test/wav.test.ts",
-    "test/measure.test.ts",
-    "test/intent.test.ts",
-    "test/audioFeatures.test.ts",
-    "test/presetSimilarity.test.ts",
-    "test/liveAdapter.test.ts",
   ],
 }

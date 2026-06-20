@@ -9,7 +9,7 @@
     "build": "tsx build.ts",
     "build:prod": "tsx build.ts --production",
     "typecheck": "tsc --noEmit",
-    "test": "node test-kernel.mjs",
+    "test": "node test/test-kernel.mjs",
     "bridge": "tsx scripts/bridge.ts",
     "bridge:restart": "tsx scripts/bridge.ts --restart",
     "dev": "tsx build.ts && extensions-cli run",
@@ -19,11 +19,11 @@
     "node": ">=22.11.0"
   },
   "dependencies": {
-    "@ableton-extensions/sdk": "file:../../../../../ableton-extensions-sdk-1.0.0-beta.0.tgz",
+    "@ableton-extensions/sdk": "file:../../ableton-extensions-sdk-1.0.0-beta.0.tgz",
     "ws": "^8.18.0"
   },
   "devDependencies": {
-    "@ableton-extensions/cli": "file:../../../../../ableton-extensions-cli-1.0.0-beta.0.tgz",
+    "@ableton-extensions/cli": "file:../../ableton-extensions-cli-1.0.0-beta.0.tgz",
     "@types/node": "^22.0.0",
     "@types/ws": "^8.18.0",
     "esbuild": "0.28.0",

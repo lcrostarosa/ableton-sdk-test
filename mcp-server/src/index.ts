@@ -11,8 +11,8 @@
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { RECIPES } from "../../../../src/recipes.ts";
-import { DEFAULT_PROFILE, PROFILES } from "../../../../src/profiles.ts";
+import { RECIPES } from "../../src/recipes.ts";
+import { DEFAULT_PROFILE, PROFILES } from "../../src/profiles.ts";
 import { KernelClient, BRIDGE_URL } from "./kernel-client.ts";
 import type { KernelCaller } from "./kernel-client.ts";
 import {

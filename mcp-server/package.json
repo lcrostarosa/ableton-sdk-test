@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node src/index.ts",
     "typecheck": "tsc --noEmit",
-    "test": "node test-mcp.mjs"
+    "test": "node test/test-mcp.mjs"
   },
   "engines": {
     "node": ">=23.6.0"

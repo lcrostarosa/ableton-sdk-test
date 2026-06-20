@@ -3,8 +3,8 @@
 // actually runs.
 
 import { z } from "zod";
-import { RECIPES } from "../../../../src/recipes.ts";
-import { PROFILES, DEFAULT_PROFILE } from "../../../../src/profiles.ts";
+import { RECIPES } from "../../src/recipes.ts";
+import { PROFILES, DEFAULT_PROFILE } from "../../src/profiles.ts";
 
 export const recipeIds = Object.keys(RECIPES) as [string, ...string[]];
 export const synthIds = Object.keys(PROFILES) as [string, ...string[]];

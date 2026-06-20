@@ -1,9 +1,9 @@
 // Offline kernel handler tests — the REAL handlers (resolveTrack, adapterFor, the apply →
 // revert lifecycle) against a fake Live rig (FakeSerum render behind fake SDK objects).
-// Complements abletonsdk-mcp-server/test-mcp.mjs, which stubs at the bridge instead.
-//   node test-kernel.mjs
+// Complements abletonsdk-mcp-server/test/test-mcp.mjs, which stubs at the bridge instead.
+//   node test/test-kernel.mjs
 import assert from "node:assert";
-import { cleanupFakeKernelRig, makeRig } from "../../../test/fixtures/mcp/fakeKernelRig.mjs";
+import { cleanupFakeKernelRig, makeRig } from "../../test/fixtures/mcp/fakeKernelRig.mjs";
 
 let pass = 0;
 async function check(name, fn) {
