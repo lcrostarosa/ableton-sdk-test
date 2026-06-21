@@ -1,8 +1,8 @@
 // Round-trip the WAV codec and confirm the decoded signal measures the brightness we put in.
 // Pure Node, no rig.  node test/wav.test.ts
 import assert from "node:assert";
-import { encodeWav, encodeWavStereo, decodeWav } from "../src/wav.ts";
-import { spectralCentroid } from "../src/centroid.ts";
+import { encodeWav, encodeWavStereo, decodeWav } from "../src/common/wav.ts";
+import { spectralCentroid } from "../src/common/centroid.ts";
 
 let pass = 0;
 function check(name: string, fn: () => void): void {

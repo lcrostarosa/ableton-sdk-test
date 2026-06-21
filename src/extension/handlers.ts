@@ -9,17 +9,17 @@
 // measurement region, and the metric bands. Supporting a new synth is a new profile.
 
 import fs from "node:fs";
-import { LiveAdapter, RENDER_TRACK_NAME, resolveDevice } from "../../src/liveAdapter.ts";
-import type { SdkAudioTrack, SdkSong, SdkTrack } from "../../src/liveAdapter.ts";
-import { applyRecipe } from "../../src/intentEngine.ts";
-import type { RecipeResult } from "../../src/intentEngine.ts";
-import { makeRandomProposer } from "../../src/proposers.ts";
-import { RECIPES } from "../../src/recipes.ts";
-import { checkExposure } from "../../src/registry.ts";
-import type { Region, SynthProfile } from "../../src/registry.ts";
-import { PROFILES, getProfile } from "../../src/profiles.ts";
-import { measureFull } from "../../src/measure.ts";
-import { decodeWav } from "../../src/wav.ts";
+import { LiveAdapter, RENDER_TRACK_NAME, resolveDevice } from "../common/liveAdapter.ts";
+import type { SdkAudioTrack, SdkSong, SdkTrack } from "../common/liveAdapter.ts";
+import { applyRecipe } from "../common/intentEngine.ts";
+import type { RecipeResult } from "../common/intentEngine.ts";
+import { makeRandomProposer } from "../common/proposers.ts";
+import { RECIPES } from "../common/recipes.ts";
+import { checkExposure } from "../common/registry.ts";
+import type { Region, SynthProfile } from "../common/registry.ts";
+import { PROFILES, getProfile } from "../common/profiles.ts";
+import { measureFull } from "../common/measure.ts";
+import { decodeWav } from "../common/wav.ts";
 
 // The slice of ExtensionContext the handlers need (resources for rendering; the Song comes
 // via a getter so each request reads Live's current state, never a stale snapshot).

@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import { RENDER_TRACK_NAME } from "../../../src/liveAdapter.ts";
+import { RENDER_TRACK_NAME } from "../../../src/common/liveAdapter.ts";
 import type {
   SdkAudioTrack,
   SdkContext,
@@ -8,8 +8,8 @@ import type {
   SdkResources,
   SdkSong,
   SdkTrack,
-} from "../../../src/liveAdapter.ts";
-import { encodeWav } from "../../../src/wav.ts";
+} from "../../../src/common/liveAdapter.ts";
+import { encodeWav } from "../../../src/common/wav.ts";
 import { FakeSerum } from "../audio/fakeSerum.ts";
 
 export function fakeParam(name: string, min: number, max: number, value: number): SdkDeviceParameter {

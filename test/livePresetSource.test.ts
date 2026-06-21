@@ -5,9 +5,9 @@ import { fileURLToPath } from "node:url";
 import {
   createAcquisitionGateResult,
   evaluateAcquisitionGates,
-} from "../src/acquisitionGates.ts";
-import { LiveDevicePresetSource } from "../src/livePresetSource.ts";
-import { validatePresetRecord } from "../src/presetCorpus.ts";
+} from "../src/common/acquisitionGates.ts";
+import { LiveDevicePresetSource } from "../src/common/livePresetSource.ts";
+import { validatePresetRecord } from "../src/common/presetCorpus.ts";
 import {
   fakeDevice,
   fakeTrack,

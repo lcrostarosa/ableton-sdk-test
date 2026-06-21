@@ -3,8 +3,8 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { derivePresetLabels } from "../src/presetLabels.ts";
-import { FIXTURE_PRESET_CORPUS_PATH, readPresetCorpusFile } from "../src/presetCorpusStore.ts";
+import { derivePresetLabels } from "../src/common/presetLabels.ts";
+import { FIXTURE_PRESET_CORPUS_PATH, readPresetCorpusFile } from "../src/common/presetCorpusStore.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const evidenceDir = path.join(rootDir, ".sisyphus", "evidence");

@@ -3,12 +3,12 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { extractAudioFeatures } from "../src/audioFeatures.ts";
+import { extractAudioFeatures } from "../src/common/audioFeatures.ts";
 import {
   PRESET_CORPUS_SCHEMA_VERSION,
   validatePresetRecord,
-} from "../src/presetCorpus.ts";
-import { encodeWavStereo } from "../src/wav.ts";
+} from "../src/common/presetCorpus.ts";
+import { encodeWavStereo } from "../src/common/wav.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const evidenceDir = path.join(rootDir, ".sisyphus", "evidence");

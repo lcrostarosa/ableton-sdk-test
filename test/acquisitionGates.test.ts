@@ -6,7 +6,7 @@ import {
   evaluateAcquisitionGates,
   formatAcquisitionGateReportMarkdown,
   formatFallbackSummary,
-} from "../src/acquisitionGates.ts";
+} from "../src/common/acquisitionGates.ts";
 
 let pass = 0;
 

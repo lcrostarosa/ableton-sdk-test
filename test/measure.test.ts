@@ -1,7 +1,7 @@
 // APO metrics against synthesized signals with KNOWN spectra. Pure Node, no rig.
 //   node ideas/demo/measure.test.ts
 import assert from "node:assert";
-import { measureAPO } from "../src/measure.ts";
+import { measureAPO } from "../src/common/measure.ts";
 import { FakeSerum } from "./fixtures/audio/fakeSerum.ts";
 
 let pass = 0;

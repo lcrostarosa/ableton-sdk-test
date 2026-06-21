@@ -2,13 +2,13 @@ import assert from "node:assert";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { extractAudioFeatures } from "../src/audioFeatures.ts";
-import { derivePresetLabels } from "../src/presetLabels.ts";
+import { extractAudioFeatures } from "../src/common/audioFeatures.ts";
+import { derivePresetLabels } from "../src/common/presetLabels.ts";
 import {
   PRESET_CORPUS_SCHEMA_VERSION,
   type PresetRecord,
   validatePresetRecord,
-} from "../src/presetCorpus.ts";
+} from "../src/common/presetCorpus.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const evidenceDir = path.join(rootDir, ".sisyphus", "evidence");

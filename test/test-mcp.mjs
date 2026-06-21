@@ -4,7 +4,7 @@
 import assert from "node:assert";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
-import { createServer } from "../src/index.ts";
+import { createServer } from "../src/mcp/index.ts";
 
 let pass = 0;
 async function check(name, fn) {

@@ -1,8 +1,7 @@
-// Bundles src/extension.ts (and the portable ../../src/*.ts modules it imports —
-// intentEngine, proposers, recipes, registry, profiles, liveAdapter, measure, wav,
-// centroid) into a single CommonJS file at manifest.entry. esbuild follows the relative imports,
-// transpiles the TypeScript, and inlines them, so the packaged artifact is self-contained —
-// no node_modules at runtime.
+// Bundles src/extension/index.ts (and everything it imports from src/extension/,
+// src/common/, and node_modules ws) into a single CommonJS file at manifest.entry.
+// esbuild follows the relative imports, transpiles TypeScript, and inlines them so the
+// packaged artifact is self-contained — no node_modules at runtime.
 import * as esbuild from "esbuild";
 import * as fs from "node:fs";
 
@@ -10,7 +9,7 @@ const manifest = JSON.parse(fs.readFileSync("manifest.json", "utf8"));
 const production = process.argv.includes("--production");
 
 await esbuild.build({
-  entryPoints: ["src/extension.ts"],
+  entryPoints: ["src/extension/index.ts"],
   outfile: manifest.entry,
   bundle: true,
   format: "cjs",

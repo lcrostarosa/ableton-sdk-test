@@ -1,9 +1,9 @@
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { makeHandlers } from "../../../extension/ableton-sdk-mcp/kernel/src/handlers.ts";
+import { makeHandlers } from "../../../src/extension/handlers.ts";
 import { FakeSerum } from "../audio/fakeSerum.ts";
-import { encodeWav } from "../../../src/wav.ts";
+import { encodeWav } from "../../../src/common/wav.ts";
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), "kernel-test-"));
 const tmpWav = path.join(tmpDir, "render.wav");

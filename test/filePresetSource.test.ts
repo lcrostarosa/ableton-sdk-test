@@ -2,8 +2,8 @@ import assert from "node:assert";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { FilePresetSource } from "../src/filePresetSource.ts";
-import { validatePresetRecord } from "../src/presetCorpus.ts";
+import { FilePresetSource } from "../src/common/filePresetSource.ts";
+import { validatePresetRecord } from "../src/common/presetCorpus.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const fixtureRoot = path.join(rootDir, "test", "fixtures", "preset-files");

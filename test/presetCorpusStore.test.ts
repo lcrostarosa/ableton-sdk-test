@@ -11,8 +11,8 @@ import {
   readPresetCorpusFile,
   updatePresetCorpusFile,
   writePresetCorpusFile,
-} from "../src/presetCorpusStore.ts";
-import { validatePresetCorpus } from "../src/presetCorpus.ts";
+} from "../src/common/presetCorpusStore.ts";
+import { validatePresetCorpus } from "../src/common/presetCorpus.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const evidenceDir = path.join(rootDir, ".sisyphus", "evidence");

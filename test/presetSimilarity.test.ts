@@ -3,11 +3,11 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { readPresetCorpusFile, FIXTURE_PRESET_CORPUS_PATH, LATEST_PRESET_CORPUS_REPORT_PATH } from "../src/presetCorpusStore.ts";
+import { readPresetCorpusFile, FIXTURE_PRESET_CORPUS_PATH, LATEST_PRESET_CORPUS_REPORT_PATH } from "../src/common/presetCorpusStore.ts";
 import {
   buildPresetSimilarityReport,
   formatPresetSimilarityReportText,
-} from "../src/presetSimilarity.ts";
+} from "../src/common/presetSimilarity.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const evidenceDir = path.join(rootDir, ".sisyphus", "evidence");
@@ -72,7 +72,7 @@ await check("formats a deterministic report and the CLI writes the default JSON 
   const stdout = execFileSync(
     process.execPath,
     [
-      "runPresetReport.ts",
+      "src/common/runPresetReport.ts",
       "--corpus",
       FIXTURE_PRESET_CORPUS_PATH,
       "--query",

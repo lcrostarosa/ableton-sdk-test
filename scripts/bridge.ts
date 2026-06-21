@@ -20,7 +20,7 @@ import { spawn, execFile, type ChildProcess } from "node:child_process";
 import { promisify } from "node:util";
 import { setTimeout as sleep } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
-import { BRIDGE_HOST, BRIDGE_PORT, BRIDGE_URL } from "../src/protocol.ts";
+import { BRIDGE_HOST, BRIDGE_PORT, BRIDGE_URL } from "../src/extension/protocol.ts";
 
 const execFileP = promisify(execFile);
 

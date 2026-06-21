@@ -1,10 +1,10 @@
 import { FakeSerum } from "../audio/fakeSerum.ts";
-import { measureScalar } from "../../../src/measure.ts";
-import { safeOf } from "../../../src/registry.ts";
-import { SERUM_PROFILE } from "../../../src/profiles.ts";
-import type { Range, SynthProfile } from "../../../src/registry.ts";
-import type { ScalarAPO } from "../../../src/measure.ts";
-import type { RecipeAdapter } from "../../../src/intentEngine.ts";
+import { measureScalar } from "../../../src/common/measure.ts";
+import { safeOf } from "../../../src/common/registry.ts";
+import { SERUM_PROFILE } from "../../../src/common/profiles.ts";
+import type { Range, SynthProfile } from "../../../src/common/registry.ts";
+import type { ScalarAPO } from "../../../src/common/measure.ts";
+import type { RecipeAdapter } from "../../../src/common/intentEngine.ts";
 
 const SIM_KEYS = {
   "filter.cutoff": "cutoff",

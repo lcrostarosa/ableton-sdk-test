@@ -7,7 +7,7 @@ import {
   isPresetRecord,
   validatePresetCorpus,
   validatePresetRecord,
-} from "../src/presetCorpus.ts";
+} from "../src/common/presetCorpus.ts";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const fixtureDir = path.join(rootDir, "test", "fixtures", "preset-corpus");

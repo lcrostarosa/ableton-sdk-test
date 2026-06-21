@@ -2,16 +2,16 @@
 //   node ideas/demo/intent.test.ts
 import assert from "node:assert";
 import { SimAdapter } from "./fixtures/adapters/simAdapter.ts";
-import { applyRecipe } from "../src/intentEngine.ts";
-import { makeRandomProposer } from "../src/proposers.ts";
-import { RECIPES, matchIntent } from "../src/recipes.ts";
-import { SERUM_PROFILE } from "../src/profiles.ts";
+import { applyRecipe } from "../src/common/intentEngine.ts";
+import { makeRandomProposer } from "../src/common/proposers.ts";
+import { RECIPES, matchIntent } from "../src/common/recipes.ts";
+import { SERUM_PROFILE } from "../src/common/profiles.ts";
 import {
   byId as byIdOf,
   checkExposure as checkExposureOf,
   resolveAlias as resolveAliasOf,
   safeOf as safeRangeOf,
-} from "../src/registry.ts";
+} from "../src/common/registry.ts";
 
 // Registry helpers are profile-parametric now; these tests exercise the Serum profile.
 const byId = (id: string) => byIdOf(SERUM_PROFILE, id);

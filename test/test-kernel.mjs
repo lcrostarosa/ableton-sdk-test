@@ -3,7 +3,7 @@
 // Complements abletonsdk-mcp-server/test/test-mcp.mjs, which stubs at the bridge instead.
 //   node test/test-kernel.mjs
 import assert from "node:assert";
-import { cleanupFakeKernelRig, makeRig } from "../../test/fixtures/mcp/fakeKernelRig.mjs";
+import { cleanupFakeKernelRig, makeRig } from "./fixtures/mcp/fakeKernelRig.mjs";
 
 let pass = 0;
 async function check(name, fn) {

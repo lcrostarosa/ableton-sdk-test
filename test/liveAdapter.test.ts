@@ -7,11 +7,11 @@
 import assert from "node:assert";
 import fs from "node:fs";
 import path from "node:path";
-import { LiveAdapter, RENDER_TRACK_NAME } from "../src/liveAdapter.ts";
-import type { SdkResources, SdkSong, SdkTrack } from "../src/liveAdapter.ts";
-import { applyRecipe } from "../src/intentEngine.ts";
-import { makeRandomProposer } from "../src/proposers.ts";
-import { RECIPES } from "../src/recipes.ts";
+import { LiveAdapter, RENDER_TRACK_NAME } from "../src/common/liveAdapter.ts";
+import type { SdkResources, SdkSong, SdkTrack } from "../src/common/liveAdapter.ts";
+import { applyRecipe } from "../src/common/intentEngine.ts";
+import { makeRandomProposer } from "../src/common/proposers.ts";
+import { RECIPES } from "../src/common/recipes.ts";
 import {
   FakeMidiTrackShape,
   fakeDevice,
